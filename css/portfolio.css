@@ -1,0 +1,190 @@
+main {
+    padding-top: 6em;
+}
+
+.category {
+    background-color: #fff;
+    margin-top: 2em;
+    padding: 2em;
+}
+
+.category ul {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.category a {
+    border:  solid 1px;
+    padding: 1em 1.5em;
+    color: #333;
+}
+
+a.web-c {
+    border-color: #daa520;
+    background-color: #fff;
+    transition: .2s;
+}
+
+.web-c:hover {
+    border-color: #daa520;
+    background-color: #daa520;
+    color: #fff;
+    transition: .3s;
+}
+
+a.gr1-c {
+    border-color: #6fd7c4;
+    background-color: #fff;
+    transition: .2s;
+}
+
+.gr1-c:hover {
+    border-color: #6fd7c4;
+    background-color: #6fd7c4;
+    color: #fff;
+    transition: .3s;
+}
+
+a.gr2-c {
+    border-color: #e88f74;
+    background-color: #fff;
+    transition: .2s;
+}
+
+.gr2-c:hover {
+    border-color: #e88f74;
+    background-color: #e88f74;
+    color: #fff;
+    transition: .3s;
+}
+
+.gr1-c li {
+    border-color: #6fd7c4;
+}
+
+.gr2-c li {
+    border-color: #e88f74;
+}
+
+.thumb div img:hover {
+    transform: scale(95%);
+    transition: transform .3s;
+}
+
+.thumb div img {
+    transition: transform .3s;
+}
+
+.websites h2 {
+    border-color: #daa520;
+}
+
+.websites .thumb div {
+    background-color: #daa520;
+    border-color: #daa520;
+}
+
+.grade1 h2 {
+    border-color: #6fd7c4;
+}
+
+.grade1 .thumb div {
+    background-color: #6fd7c4;
+    border-color: #6fd7c4;
+}
+
+.grade2 h2 {
+    border-color: #e88f74;
+}
+
+.grade2 .thumb div {
+    background-color: #e88f74;
+    border-color: #e88f74;
+}
+
+
+/* ▼モーダルウィンドウの設定 */
+.modal-content {
+	max-width: 80vw;
+    height: auto;
+	margin:1.5em auto 0;
+	padding:2em;
+	border:2px solid #aaa;
+	background:#fff;
+	z-index:50;
+    display: none ;
+    position:fixed;
+}
+
+.modal-content .container {
+    display: grid;
+    grid-template-columns: auto 20em;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.modal-content img:first-child {
+    max-height: 35vw;
+    max-width: 38vw;
+    transform: none;
+}
+
+.modal-content video {
+    max-height: 35vw;
+    max-width: 38vw;
+}
+
+.explain {
+    margin-top: 1em;
+    padding: 0 1em 1em;
+    width: auto;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.explain span {
+    color: #3f8c7e;
+}
+
+.explain img {
+    max-width: 18em;
+    height: auto;
+    padding-top: 2em;
+}
+
+#modal-overlay{
+    z-index:30;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.75);
+}
+ 
+#modal-close {
+    right: 0.5em;
+    top: 0.3em;
+    position: absolute;
+}
+
+.button-link,.modal-syncer:hover {
+	cursor:pointer;
+}
+
+.button-link {
+    font-size: xx-large;
+}
+
+/* ▼アコーディオンメニューの設定 */
+#ac-button {
+    cursor: pointer;
+}
+
+.ac-child {
+    margin-top: 2em;
+}
