@@ -1,5 +1,5 @@
 main {
-    padding-top: 6em;
+    padding-top: 8em;
 }
 
 .category {
@@ -109,7 +109,6 @@ a.gr2-c {
 .modal-content {
 	max-width: 80vw;
     height: auto;
-	margin:1.5em auto 0;
 	padding:2em;
 	border:2px solid #aaa;
 	background:#fff;
@@ -126,7 +125,7 @@ a.gr2-c {
 }
 
 .modal-content img:first-child {
-    max-height: 35vw;
+    max-height: 40vw;
     max-width: 38vw;
     transform: none;
 }
@@ -139,21 +138,63 @@ a.gr2-c {
 .explain {
     margin-top: 1em;
     padding: 0 1em 1em;
-    width: auto;
-    height: 60vh;
+    max-width: 35vw;
+    height: 40vw;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.explain span {
-    color: #3f8c7e;
+.explain figure {
+    margin-top: 2em;
 }
 
 .explain img {
     max-width: 18em;
     height: auto;
-    padding-top: 2em;
 }
+
+.tag {
+    font-size: smaller;
+    align-items: center;
+    display: flex;
+}
+.tag p:nth-of-type(2) {
+    color: #3f8c7e;
+}
+
+.Gtag {
+    color: #fff;
+    margin-right: 1em;
+    padding: 0.2em 0.5em;
+    letter-spacing: 2px;
+    min-width: fit-content;
+}
+
+.Gtag.G12 {
+    background-image: linear-gradient(to right, #6fd7c4, #e88f74);
+}
+
+.Gtag.G1 {
+    background-color: #6fd7c4;
+}
+
+.Gtag.G2 {
+    background-color: #e88f74;
+}
+
+.tool {
+    display: flex;
+    height: fit-content;
+    margin: 1em 0 2em;
+}
+
+.tool img {
+    width: 15%;
+    margin-right: 0.5em;
+    padding-top: unset;
+}
+
+
 
 #modal-overlay{
     z-index:30;

@@ -1,4 +1,67 @@
 main {
-    padding-top: 6em;
+    width: auto;
 }
 
+
+aside {
+    width: 13em;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #fff;
+    width: 48em;
+    padding: 4em 6em;
+    margin-left: -10em;
+}
+
+footer {
+    margin-top: 5em;
+}
+
+
+/* ▼詳細設定 */
+.main_v {
+    background-position: 0% 0%;
+    background-image: url(../img/infov.png);    
+}
+
+.main_v h1 {
+    position: relative;
+    padding: 1em 2em;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 7em;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.column {
+    margin-top: 5em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20vw 1fr;
+}
+
+aside img {
+    margin-bottom: 1em;
+}
+
+aside span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+aside .container {
+    font-size: smaller;
+    margin-top: 1em;
+}
+
+article p {
+    line-height: 2em;
+}
+
+article h2 {
+    margin-top: 2em;
+}
