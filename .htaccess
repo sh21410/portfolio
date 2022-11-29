@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName [ ”password” ]
-AuthUserFile [ /Users/satoharuka/Desktop/Portfolio/.htpasswd ]
-require valid-user
