@@ -1,0 +1,848 @@
+@charset "UTF-8";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+    overflow: auto;
+    /*はみ出た部分を隠す？*/
+    text-size-adjust: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+
+.h-visual {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.h-visual img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  
+li {
+  list-style: none;
+}
+
+
+/*ヘッダーの枠*/
+.nav-box {
+  position: fixed;
+  font-size: 62.5%;
+  top: 4vw;
+  right: 4vw;
+  z-index: 100;
+  width: 5em;
+  height: 5em;
+  border: 2px solid #004EA2;
+  background-color: white;
+}
+
+.nav-box span {
+  display: block;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*ハンバーガーメニューの3本線*/
+.bar-1 {
+  width: 30px;
+  position: relative;
+  background-color: #004EA2;
+  margin: 0 auto;
+  top: 30%;
+  display: block;
+  padding-bottom: 0.3em;
+}
+
+.bar-2 {
+  width: 30px;
+  position: relative;
+  background-color: #004EA2;
+  display: block;
+  margin: 0 auto;
+  top: 50%;
+  padding-bottom: 0.3em;
+}
+
+.bar-3 {
+  width: 30px;
+  padding-bottom: 0.3em;
+  position: relative;
+  background-color: #004EA2;
+  margin: 0 auto;
+  bottom: -70%;
+  display: block;
+}
+
+.bar-1,.bar-2,.bar-3:hover {
+  color: white;
+}
+
+
+/* スマートフォンで見たときにスマホ用のヘッダー画像とロゴ画像が表示される */
+@media only screen and (max-width: 768px) {
+    .header-pc,.text-pc { display: none !important; }
+    .header-sp,.text-sp { display: block !important;}
+}
+
+.header-sp {
+  height: 100vh;
+  width: auto; 
+  position: absolute;         
+ }
+
+
+.h-text-box {
+  width: auto;
+  height: 100%;
+  position: relative;
+  top: 18vh;
+  padding-left: 36vw;
+  z-index: 5;
+}
+
+.h-text-box img {
+  height: 60vh;
+  width: auto;
+  position: relative;
+}
+
+
+.scroll {
+  width: auto;
+  position: absolute;
+  top: 88vh;
+  padding-left: 45vw;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+.scroll img {
+  width: 10vw;
+}
+  
+
+/*ハンバーガーメニュー設定*/
+  .hamburger-menu + .sidenavs:target {
+    overflow-x: visible;
+    /* ボックスからはみ出る箇所をそのまま表示 */
+    width: 100%;
+    display:block;
+  }
+  .sidenavs:target {
+    overflow-x: hidden;
+    /* ボックスからはみ出る箇所を隠す */
+    width: 100%;
+    /*ハンバーガーメニュー展開時の横幅設定*/
+  }
+  /* ハンバーガーメニュー表示時 */
+  .sidenavs {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* 画像の配置を指定 */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+    /* 横スクロールを無効にする */
+    padding-top: 60px;
+    transition: 0.5s;
+    /* アニメーションの時間を0.5秒に指定 */
+  }
+  /* ハンバーガーメニュー表示時のリンク */
+  .sidenavs a {
+    text-align: left;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #004EA2;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-top: 1.0em;
+    margin-left: 8em;
+  }
+  /* マウスオーバー後のリンク */
+  .sidenavs a:hover {
+    color: white;
+  }
+  /* クローズボタン */
+  .sidenavs .close-btn {
+    position: absolute;
+    /* 親要素との絶対位置を指定 */
+    top: 1em;
+    right: 1em;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.gaiyou {
+  padding: 10em 0;
+}
+
+.gaiyou-box {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  border: 3px solid #004EA2;
+  padding-bottom: 2em;
+}
+
+
+.boy {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+
+.boy img {
+  height: auto;
+  width: 25%;
+  position: absolute;
+  padding-left: 3em;
+  bottom: -3em;
+}
+
+
+
+.p-box {
+  width: auto;
+  height: 4em;
+  margin: auto;
+  background-color: #004EA2;
+  border: 2px solid white;
+  top: 2em;
+  left: -2px;
+  z-index: 10;
+  position: relative;
+}
+
+.gaiyou-box .p-box {
+  width: 50vw;
+}
+
+
+.p-box p {
+  margin: auto;
+  padding-top: 1em;
+  font-size: larger;
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  width: auto;
+}
+
+.sotuken .p-box {
+  width: 50vw;
+  background-color: #fff;
+  border: 3px solid #004EA2;
+}
+
+.sotuken .p-box p {
+  color: #004EA2;
+}
+
+.midasi {
+  width: 50%;
+  height: auto;
+  background-color: white;
+}
+
+
+.gaiyou-ul {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  color: black;
+}
+
+
+.time,.place{
+  width: 85%;
+  height: 35%;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+.komidasi {
+  width: 100%;
+  /*font-size: 25px;*/
+  text-align: left;
+}
+
+.day-box, .day-box-2 {
+  position: relative;
+  text-align: left;
+  padding-left: 2.5em;
+  margin-top: 1rem;
+  text-decoration: #FF3300 line-through;
+  /* font-size: 1.2vw; */
+}
+
+.time-box, .time-box-2 {
+  position: relative;
+  text-align: center;
+  left: 3vw;
+  margin-top: 1rem;
+  /* font-size: 1.2vw; */
+}
+
+
+.placebox {
+  /* font-size: 1.2vw; */
+  margin-top: 1em;
+  text-align: left;
+  padding-left: 2.5em;
+  width: auto;
+  text-decoration: #FF3300 line-through;
+}
+
+.attention {
+  background-color: #f0f0f0;
+  margin: 2.5em;
+  padding: 2em;
+  width: auto;
+}
+
+.attention-box {
+  color: #FF3300;
+}
+
+
+.department {
+  width: 85%;
+  height: 82%;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+
+.departmentbox-y {
+  /* font-size: 1.2vw; */
+  margin-top: 1em;
+  text-align: left;
+  padding-left: 2.5em;
+  line-height: 1.7;
+  width: auto;
+}
+
+.departmentbox-y b {
+  color: #004EA2;
+}
+
+.departmentbox-m {
+  /* font-size: 1.2vw; */
+  margin-top: 3em;
+  text-align: left;
+  padding-left: 2.5em;
+  line-height: 1.7;
+}
+
+.departmentbox-m b {
+  color: #ED6C00;
+}
+
+
+.picture {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-bottom: 10em;
+  margin: 0 auto;
+  margin-top: 10em;
+  display: inline-block;
+  /*background-color: white;*/
+}
+
+.picture ul {
+  list-style: none;
+}
+
+.picture img {
+    padding-bottom: 10vw;
+    width: 100%;
+}
+
+.access .-text-box {
+  width: 31%;
+  height: auto;
+  background-color: white;
+  position: relative;
+  display: table;
+  /* top: 0; */
+  left: -3vw;
+}
+
+
+.access .boy {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+
+.access .boy img {
+  height: auto;
+  width: 25%;
+  position: absolute;
+  padding-left: 3em;
+  bottom: -3em;
+}
+
+
+.access {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  position: relative;
+  padding-bottom: 15em;
+}
+
+  
+.map-box {
+  position: relative;
+  padding-top: 10vw;
+  height: 50vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.placebox a {
+  color: inherit;
+}
+
+.placebox a:hover{
+    -webkit-animation: blink 1s ease-in-out infinite alternate;
+    animation: blink 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes blink {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @keyframes blink {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+.gmap iframe,.gmap object,.gmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+}
+
+
+.map-box .p-box p {
+  position: relative;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 9;
+  /* font-size: 2.2vw; */
+  white-space: nowrap;
+  height: 40vh;
+}
+
+
+.boy-2 {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.boy-2 img {
+  height: auto;
+  width: 25%;
+  position: absolute;
+  padding-left: 3em;
+  bottom: -3em;
+}
+
+  
+.sotuken {
+  padding-bottom: 10em;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.sotuken-box {
+  width: 80%;
+  height: auto;
+  border: 3px solid #004EA2;
+  margin: 0 auto;
+}
+
+.sotuken-container1:after {
+  list-style: none;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.sotuken-img {
+  width: 70vw;
+  height: auto;
+  padding-top: 3em;
+  margin: 0 auto;
+}
+
+
+.sotuken-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.school-1{
+  width: 85%;
+  height: 45%;
+  /*border: 1px solid black;*/
+  padding: 2em;
+  position: relative;
+}
+
+.yahaba {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* font-size: 1.7vw; */
+  text-align: left;
+  color: #004EA2;
+}
+
+.yahaba-text {
+  /* font-size: 1.4vw; */
+  text-align: left;
+  width: auto;
+}
+
+.yahaba-day {
+  width: 90%;
+  height: 70%;
+  /*border: 0.5px solid black;*/
+  position: relative;
+  margin-top: 10%;
+}
+
+.oneday {
+  width: 95%;
+  height: auto;
+  /* font-size: 1vw; */
+  text-align: left;
+  line-height: 1.7;
+  padding: 1em 0;
+}
+
+
+.oneday b {
+  font-size: auto;
+}
+
+
+.twoday {
+  width: auto;
+  height: auto;
+  /* font-size: 1vw; */
+  text-align: left;
+  line-height: 1.7;
+  padding: 1em 0;
+}
+
+.threeday {
+  width: auto;
+  height: auto;
+  /* font-size: 1vw; */
+  text-align: left;
+  line-height: 1.7;
+  padding: 1em 0;
+}
+
+
+.sotuken-text {
+  line-height: 1.7;
+  padding-left: 2em;
+  padding: 2em;
+}
+
+.sotuken-text p {
+  width: auto;
+  text-align: left;
+  font-size: large;
+  letter-spacing: 2px;
+  padding-top: 2em;
+  margin: 0 auto;
+}
+
+.mizusawa-day .oneday {
+  width: 95%;
+  height: auto;
+  /* font-size: 1vw; */
+  text-align: left;
+  line-height: 1.9em;
+}
+
+
+.school-2 {
+  width: 80%;
+  height: auto;
+  padding: 2em;
+}
+
+.mizusawa {
+  /* font-size: 1.7vw; */
+  text-align: left;
+  color: #ED6C00;
+}
+
+
+.boy-3 {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.boy-3 img {
+  height: auto;
+  width: 25%;
+  position: absolute;
+  padding-left: 3em;
+  bottom: -3em;
+}
+
+
+
+
+.sns {
+  height: auto;
+  /* border: 3px solid #004EA2; */
+  margin: 0 auto;
+}
+
+
+.twitter-box {
+  border: 3px solid #004EA2;
+  width: 80%;
+  height: 75vh;
+  padding-top: 2em;
+  margin: 0 auto;
+}
+
+
+
+.sns-text {
+  text-align: center;
+  height: auto;
+  width: fit-content;
+  padding: 3em 0;
+  margin: 0 auto;
+}
+
+.sns-text p {
+  padding: 10px 0;
+}
+
+.sns-icons {
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer .sns-icons {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+  
+.sns-icons img {
+  width: 8vw;
+  height: auto;
+  padding: 0 10px;
+  transition: scale(1.0,1.0);
+  transition-duration: 1s;  /*ボタン戻るアニメーション*/
+}
+
+
+footer {
+  padding-top: 8em;
+  height: auto;
+  width: 100%;
+}
+
+.rogo {
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+}
+
+
+
+.left-yahaba {
+  width: auto;
+}
+
+.y-box {
+  width: max-content;
+  height: auto;
+  padding: 0.2em 1em;
+  background-color: #004EA2;
+  /* font-size: 2vw; */
+}
+
+.y-title {
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+.y-text {
+  /* font-size: 1.3vw; */
+  text-align: left;
+  line-height: 1.8em;
+  white-space: nowrap;
+  padding: 1em 0 3em;
+  margin: 0 auto;
+}
+
+.right-mizusawa {
+  left: 7vw;
+}
+
+.m-box {
+
+  width: max-content;
+  height: auto;
+  padding: 0.2em 1em;
+  background-color: #ED6C00;
+  /* font-size: 2vw; */
+}
+
+.m-title {
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+.m-text {
+  /* font-size: 1.3vw; */
+  text-align: left;
+  line-height: 1.8em;
+  white-space: nowrap;
+  padding: 1em 0 3em;
+  margin: 0 auto;
+}
+
+.footer-2 {
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+footer .sns-icons {
+  height: auto;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+
+.footer-img {
+  width: 50vw;
+  height: auto;
+  padding-top: 5em;
+  margin: 0 auto;
+}
+
+.omake {
+  width: 45%;
+  margin: 0 auto;
+}
+
+span {
+  font-size: small;
+  color: #004EA2;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+
+/*アニメーション*/
+.scroll img:hover {
+  transform: scale(1.2,1.2);
+  transition-duration: 0.2s; /*変化の時間*/
+}
+
+
+.sns-icons img:hover {
+  transform: scale(1.2,1.2); /*画像の拡大*/
+  transition-duration: 0.2s; /*変化の時間*/
+}
+.sns-icons a {
+  text-decoration: none!important;
+}
+
+
+.rogo img {
+  transform: scale(1.0,1.0); /*画像の拡大*/
+  transition-duration: 1s; /*変化の時間*/
+}
+.rogo img:hover {
+  transform: scale(1.1,1.1); /*画像の拡大*/
+  transition-duration: 0.4s; /*変化の時間*/
+}
+
+
+.footer-img img {
+  transform: scale(1.0,1.0); /*画像の拡大*/
+  transition-duration: 0.8s; /*変化の時間*/
+}
+
+.footer-img img:hover {
+  transform: scale(1.2,1.2); /*画像の拡大*/
+  transition-duration: 0.3s; /*変化の時間*/
+}

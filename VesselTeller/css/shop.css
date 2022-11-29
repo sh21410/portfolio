@@ -1,0 +1,29 @@
+body {
+    background-color: #e6eae6;
+
+}
+
+article {
+    margin-top: 100px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 50px;
+    display: inline-block;
+}
+
+figure {
+    margin-bottom: 50px;
+}
+
+figure :hover {
+    transform: translateY(-3px);
+    transition-property: background-color transform; 
+    transition-duration: 0.5s;
+    background-color: #88bfbf;
+}
+
+.productL a {
+    text-decoration-line: none;
+}

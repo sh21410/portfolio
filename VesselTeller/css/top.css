@@ -1,0 +1,28 @@
+/* メインビジュ */
+.mainV {
+    width: 100% ;
+    margin: 0;
+  }
+
+.mainV img {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+/* 各ブロック設定 */
+section {
+  margin: 100px auto;
+}
+
+.info {
+  margin-bottom: 20vh;
+}
+
+iframe {
+  width: 100%;
+}
+
+figure {
+  padding-bottom: 50px;
+}
