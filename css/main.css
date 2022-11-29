@@ -157,23 +157,26 @@ header .logo h1 {
   background-attachment: fixed;
   background-image: url(../img/mainv.png);
   background-size: cover;
-  /* background-position: bottom; */
 }
 
 
 .main_v p {
+  width: fit-content;
+  margin-left: 20vw;
+  /* padding-top: 10em; */
   height: 5em;
   font-size: small;
-  padding-left: 20vw;
   letter-spacing: 1.5px;
   text-align: left;
   color: #fff;
-  position: absolute;
   top: 14.5em;
+  z-index: 1;
+  position: relative;
+  display: block;
 }
 
 .back_copy {
-  width: 50em;
+  width: 70vw;
   height: 6em;
   top: 10em;
   left: 0;
@@ -336,14 +339,15 @@ header .logo h1 {
 }
 
 .skill .container div {
-  width: 30%;
+  width: 48%;
   text-align: center;
 }
 
 .skill img {
   justify-content: center;
   margin: 0;
-  width: 80%;
+  width: 50%;
+  height: fit-content;
 }
 
 .skill ul {
@@ -360,32 +364,104 @@ header .logo h1 {
   background-repeat: no-repeat;
 }
 
+p.explain {
+  margin-top: 1em;
+  font-size: smaller;
+  text-align: left;
+}
+
+.tec::before {
+  background: no-repeat url(../img/kakko.svg);
+  background-size: contain;
+  margin: 0;
+  height: 100%;
+  width: 2em;
+  left: -3em;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.tec {
+  position: relative;
+  z-index: 1;
+}
+
 li.ai {
   background-image: url(../img/list/ai.gif);
+}
+li.ai::after {
+  left: 9em;
+  margin-top: -1em;
+  position: absolute;
+  display: block;
+  content: '\02605\02605\02605\02605\02605';
 }
 
 li.ps {
   background-image: url(../img/list/ps.gif);
 }
+li.ps::after {
+  margin-top: -1em;
+  left: 9em;
+  position: absolute;
+  display: block;
+  content: '\02605\02605\02605\02605\02606';
+}
 
 li.xd {
   background-image: url(../img/list/xd.gif);
+}
+li.xd::after {
+  margin-top: -1em;
+  left: 9em;
+  position: absolute;
+  display: block;
+  content: '\02605\02605\02605\02605\02605';
 }
 
 li.id {
   background-image: url(../img/list/id.gif);
 }
+li.id::after {
+  margin-top: -1em;
+  left: 9em;
+  position: absolute;
+  display: block;
+  content: '\02605\02606\02606\02606\02606';
+}
 
 li.html {
   background-image: url(../img/list/html.gif);
+}
+li.html::after {
+  margin-top: -1em;
+  left: 9em;
+  position: absolute;
+  display: block;
+  content: '\02605\02605\02605\02605\02605';
 }
 
 li.css {
   background-image: url(../img/list/css.gif);
 }
+li.css::after {
+  margin-top: -1em;
+  left: 9em;
+  position: absolute;
+  display: block;
+  content: '\02605\02605\02605\02605\02606';
+}
 
 li.js {
   background-image: url(../img/list/js.gif);
+}
+li.js::after {
+  margin-top: -1em;
+  left: 9em;
+  position: absolute;
+  display: block;
+  content: '\02605\02605\02606\02606\02606';
 }
 
 .info .white_back {
@@ -534,3 +610,38 @@ footer li {
   width: 22em;
   height: 100vh;
 }
+
+/* レスポンシブ */
+@media screen and (max-width: 900px) {
+  .main_v p {
+    margin-left: 10vw;
+  }
+  .back_copy {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main_v p {
+    width: 90vw;
+    padding-left: 2em;
+  }
+  .back_copy {
+    width: 90vw;
+  }
+
+  .thumb {
+    grid-template-columns: auto auto;
+  }
+
+  .white_back {
+    padding: 4em;
+  }
+  .info .white_back {
+    height: 40vh;
+  }
+  h1.logo {
+    line-height: 2em;
+  }
+
+ }

@@ -1,18 +1,22 @@
 main {
-    width: auto;
+    width: 60vw;
+    margin-left: 7vw;
 }
 
 
 aside {
-    width: 13em;
-    margin: 0 auto;
+    width: 15vw;
+    margin: 0 2em;
 }
 
 article {
     background-color: #fff;
-    width: 48em;
     padding: 4em 6em;
-    margin-left: -10em;
+}
+
+.column {
+    margin-top: 5em;
+    display: flex;
 }
 
 footer {
@@ -37,15 +41,11 @@ footer {
     z-index: 3;
 }
 
-.column {
-    margin-top: 5em;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 20vw 1fr;
-}
+
 
 aside img {
     margin-bottom: 1em;
+    width: 100%;
 }
 
 aside span {
@@ -64,4 +64,36 @@ article p {
 
 article h2 {
     margin-top: 2em;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 765px) {
+    .column {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        width: 90vw;
+    }
+
+    aside img {
+        width: 30%;
+        float: left;
+        margin-right: 2em;
+    }
+
+    aside .container {
+        clear: both;
+    }
+
+    main {
+        width: 90vw;
+        margin: 2em auto;
+    }
+
+    main article {
+        padding: 3em;
+    }
 }

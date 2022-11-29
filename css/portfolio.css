@@ -229,3 +229,10 @@ a.gr2-c {
 .ac-child {
     margin-top: 2em;
 }
+
+/* レスポンシブ */
+@media screen and (max-width: 600px) {
+    .category ul {
+        width: 90vw;
+    }
+}
