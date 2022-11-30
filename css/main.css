@@ -347,7 +347,7 @@ header .logo h1 {
   justify-content: center;
   margin: 0;
   width: 50%;
-  height: fit-content;
+  height: auto;
 }
 
 .skill ul {
@@ -366,6 +366,7 @@ header .logo h1 {
 
 p.explain {
   margin-top: 1em;
+  padding: 0 1em;
   font-size: smaller;
   text-align: left;
 }
