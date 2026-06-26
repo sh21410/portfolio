@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>制作物一覧｜About sato haruka</title>
-    
-    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script  type="text/javascript" src="js/main.js"></script>
@@ -23,7 +23,7 @@
         <div class="container">
             <!-- ↓　ヘッダーロゴ　↓ -->
             <div class="logo">
-                <a href="#top">
+                <a href="index.html">
                     <h1><span>A</span>bout <span>S</span>ato <span>H</span>aruka</h1>
                 </a>
             </div>
@@ -44,27 +44,25 @@
                             <a href="index.html">TOP</a>
                         </li>
                         <li>
+                            <a href="index.html#profile">PROFILE</a>
+                        </li>
+                        <li>
                             <a href="#top">PORTFOLIO</a>
                         </li>
-
                         <ul class="potofo-li">
                             <li>
                                 <a href="portfolio.html#web">WEBSITE</a>
                             </li>
                             <li>
-                                <a href="portfolio.html#gr1">1st GRADE</a>
+                                <a href="portfolio.html#work">WORK</a>
                             </li>
                             <li>
                                 <a href="portfolio.html#gr2">2nd GRADE</a>
-                            </li>    
+                            </li>
+                            <li>
+                                <a href="portfolio.html#gr1">1st GRADE</a>
+                            </li>
                         </ul>
-
-                        <li>
-                            <a href="index.html#profile">PROFILE</a>
-                        </li>
-                        <li>
-                            <a href="info.html">INFOMATION</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -74,150 +72,527 @@
     <main id="top">
         <h1>制作物一覧</h1>
         <div class="category">
-                <h3>カテゴリー</h3>
-                <nav>
-                    <ul>
-                        <li><a class="web-c" href="#web">webサイト</a></li>
-                        <li><a class="gr1-c" href="#gr1">１学年時</a></li>
-                        <li><a class="gr2-c" href="#gr2">２学年時</a></li>
-                    </ul>
-                </nav>
+            <h3>カテゴリー</h3>
+            <nav class="container">
+                <div class="WEB-box">
+                    <p>WEB</p>
+                    <a class="web-c" href="#web">webサイト</a>
+                </div>
+                <div class="ETC-box">
+                    <p>ETC（DTP、動画…など）</p>
+                    <div class="container">
+                        <a class="work-c" href="#work">実務制作</a>
+                        <div class="academy-box container">
+                            <a class="gr2-c" href="#gr2">２学年時</a>
+                            <a class="gr1-c" href="#gr1">１学年時</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
         
         <section class="websites" id="web">
             <h2>webサイト</h2>
             <div class="thumb">
-                <div>
-                    <a class="modal-syncer" data-target="web-modal-01"><img src="img/thumb/web/tayama.png" alt="サムネイル"></a>
+            <a href="websites/SCR.html">
+                <div class="item web-c">
+                    <div class="item-img">
+                        <img src="img/thumb/web/SCR.png" alt="SCRサムネイル">
+                    </div>
+                    <div class="item-text">
+                        <p>S×C×R・詳細ページ
+                        <span class="material-icons-outlined">open_in_new</span></p>
+                    </div>
                 </div>
- 
-                <div>
-                    <a class="modal-syncer" data-target="web-modal-02"><img src="img/thumb/web/kakurega.png" alt="サムネイル"></a>
+            </a>
+            <a href="websites/tayama.html">
+                <div class="item web-c">
+                    <div class="item-img">
+                        <img src="img/thumb/web/tayama.png" alt="田山の果汁サムネイル">
+                    </div>
+                    <div class="item-text">
+                        <p>田山の果汁・詳細ページ
+                        <span class="material-icons-outlined">open_in_new</span></p>
+                    </div>
                 </div>
- 
-                <div>
-                    <a class="modal-syncer" data-target="web-modal-03"><img src="img/thumb/web/iwatecafe.png" alt="サムネイル"></a>
-                </div>
- 
-                <div>
-                    <a class="modal-syncer" data-target="web-modal-04"><img src="img/thumb/web/bussan.png" alt="サムネイル"></a>
-                </div>
+            </a>
+                <a href="websites/sangitan.html">
+                    <div class="item web-c">
+                        <div class="item-img">
+                            <img src="img/thumb/web/sangitanten.png" alt="サムネイル">
+                        </div>
+                        <div class="item-text">
+                            <p>産技短展・詳細ページ
+                            <span class="material-icons-outlined">open_in_new</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="websites/homecafe.html">
+                    <div class="item web-c">
+                        <div class="item-img">
+                            <img src="img/thumb/web/iwatecafe.png" alt="サムネイル">
+                        </div>
+                        <div class="item-text icafe">
+                            <p>いわて&times;おうちカフェ・詳細ページ
+                            <span class="material-icons-outlined">open_in_new</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="websites/soboku.html">
+                    <div class="item web-c">
+                        <div class="item-img">
+                            <img src="img/thumb/web/soboku.png" alt="サムネイル">
+                        </div>
+                        <div class="item-text">
+                            <p>素朴な継承・詳細ページ
+                            <span class="material-icons-outlined">open_in_new</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="websites/kakurega.html">
+                    <div class="item web-c">
+                        <div class="item-img">
+                            <img src="img/thumb/web/kakurega.png" alt="サムネイル">
+                        </div>
+                        <div class="item-text">
+                            <p>隠れ家見つけました・詳細ページ
+                            <span class="material-icons-outlined">open_in_new</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="websites/bussan.html">
+                    <div class="item web-c">
+                        <div class="item-img">
+                            <img src="img/thumb/web/bussan.png" alt="サムネイル">
+                        </div>
+                        <div class="item-text">
+                            <p>Vessel Teller・詳細ページ
+                            <span class="material-icons-outlined">open_in_new</span></p>
+                        </div>
+                    </div>
+                </a>
 
-                <div>
-                    <a class="modal-syncer" data-target="web-modal-05"><img src="img/thumb/web/sangitanten.png" alt="サムネイル"></a>
-                </div>
+            </div>
+        </section>
 
+        <section class="work" id="work">
+            <h2>実務制作</h2>
+            <div class="thumb">
                 <div>
-                    <a class="modal-syncer" data-target="web-modal-06"><img src="img/thumb/web/soboku.png" alt="サムネイル"></a>
+                   <a class="modal-syncer" data-target="work-modal-01"><img src="img/thumb/work/furusatoCMshiwa2023.jpg" alt="サムネイル"></a>
+                </div>
+                <div>
+                   <a class="modal-syncer" data-target="work-modal-02"><img src="img/thumb/work/birth_form.jpg" alt="サムネイル"></a>
+                </div>
+                <div>
+                   <a class="modal-syncer" data-target="work-modal-03"><img src="img/thumb/work/local_flyer.jpg" alt="サムネイル"></a>
+                </div>
+                <div>
+                   <a class="modal-syncer" data-target="work-modal-04"><img src="img/thumb/work/hina_poster.jpg" alt="サムネイル"></a>
+                </div>
+                <div>
+                   <a class="modal-syncer" data-target="work-modal-05"><img src="img/thumb/work/vote_shiwa_banner.jpg" alt="サムネイル"></a>
+                </div>
+                <div>
+                   <a class="modal-syncer" data-target="work-modal-06"><img src="img/thumb/work/furusatotaisi.jpg" alt="サムネイル"></a>
+                </div>
+                <div>
+                   <a class="modal-syncer" data-target="work-modal-07"><img src="img/thumb/work/townpromotion_meisi.jpg" alt="サムネイル"></a>
                 </div>
             </div>
 
-            <div id="web-modal-01" class="modal-content">
+            <div id="work-modal-01" class="modal-content">
                 <a id="modal-close" class="button-link">&times;</a>
                 <div class="container">
-                    <img src="img/web/tayama/PCtayama.jpg">
+                    <video src="img/work/furusatoCM/furusatoCMshiwa2023.mp4" controls="">
+                        ※お使いのブラウザではこちらの動画を再生することができません</video>
                     <div class="explain">
-                        <h3>架空のフレッシュジュース店・新規開店LP</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <h3>紫波町ふるさとCM（2023年度受賞作品）</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>ローカルTV主催CMコンテストへの作品制作・応募</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/pr.png" alt="PremiereProアイコン">
+                        </div>
+                        <p>岩手朝日テレビ主催「第21回ふるさとCM大賞」へ応募した15秒間のCM動画。最後の「踏み出す足が紫波町の地形に繋がる」という演出が関心の決め手となり「アイディア賞」を受賞。</p>
+                        <p>コンセプト：「挑戦できる町」としての魅力を、自転車のスピード感に乗せて伝える動画</p>
+                        <p>町の魅力を知らない10〜30代の若者（放送期間が年末であることから、特に地元に帰省中の若者）をターゲットとし、岩手県での暮らしに興味のある人に、紫波町で何かに挑戦してみたい！という気持ちを起こさせることを目標としています。</p>
+                        <p>出演者には、実際に町内で地域おこし活動中の若者や、町内設立高校の生徒を選出し、一緒に意見を交わしながら内容を改善していきました。
+                        制作過程と動画内容共に、関わるすべての人に町の魅力を伝えながら楽しんでもらえる作品となったことを誇りに思います。</p>
+                        <figure>
+                            <figcaption>&#9660;絵コンテ</figcaption>
+                            <a href="img/work/furusatoCM/frusatoCM_ekonte1.jpg"><img src="img/work/furusatoCM/frusatoCM_ekonte1.jpg" alt="ふるさとCM絵コンテ1"></a>
+                            <a href="img/work/furusatoCM/frusatoCM_ekonte2.jpg"><img src="img/work/furusatoCM/frusatoCM_ekonte2.jpg" alt="ふるさとCM絵コンテ2"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div id="work-modal-02" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/work/birth/birth_form.jpg">
+                    <div class="explain">
+                        <h3>紫波町オリジナルデザイン出生届</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>専門学生提案のデザイン共同制作業務</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>
+                        <p>盛岡市の専門学生の企画提案により共同制作した、紫波町オリジナル出生届です。</p>
+                        <p>コンセプト：紫波町のあたたかさを知り、町を好きになれる出生届</p>
+                        <p>紫波町をメインに、盛岡市周辺広域の子育て世代をターゲットとし、紫波町オリジナル子育て目標の「SPGs」の周知や、特産品・風土といった町ならではの魅力のアピールを目標にデザインしました。</p>
+                        <p>町外の専門学生と共にアイデアを出すことで、町の魅力を客観的に再確認したり、町外の人々にも知ってもらう機会となりました。
+                        専門学生の視点で描かれた親子や子供たちといった、町のあたたかなイメージを落とし込んだ点が一番のポイントです。</p>
+                        <figure>
+                            <figcaption>&#9660;執筆した背景イラスト</figcaption>
+                            <a href="img/work/birth/birth_backipict.jpg"><img src="img/work/birth/birth_backipict.jpg" alt="出生届背景執筆イラスト"></a>
+                        </figure>
+                        <figure>
+                            <figcaption>&#9660;告知用ポスター・チラシ</figcaption>
+                            <a href="img/work/birth/birth_poster.jpg"><img src="img/work/birth/birth_poster.jpg" alt="出生届ポスター"></a>
+                            <a href="img/work/birth/birth_flyer.jpg"><img src="img/work/birth/birth_flyer.jpg" alt="出生届フライヤー"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div id="work-modal-03" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/work/local/local_flyer.jpg">
+                    <div class="explain">
+                        <h3>「ローカルを面白がる」ビジュアル・チラシ</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>イベント告知用ビジュアル＆チラシ制作業務</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>
+                        <p>紫波町内でのトークイベントのビジュアルデザインとチラシです。</p>
+                        <p>地方での新規事業や地域づくりに興味をもつ人が参加したくなることが要件で、「地元（ローカル）にわくわく感を抱
+                        かせる広告」をコンセプトに制作。</p>
+                        <p>イベント内容が、紫波町と静岡県伊豆町の事業を交えた対談であることから、各事業モチーフを左右対称に配置して「相互の発見」の意味合いを深めています。
+                        メインカラーの黄色は「活発的」と「トークイベント話者の事業のイメージカラー」、紫色は「補色で目を引く」「町のイメージカラー」の意味を持つ配色です。</p>
+                        <figure>
+                            <figcaption>&#9660;トークイベントのスライド</figcaption>
+                            <a href="img/work/local/local_slide1.jpg"><img src="img/work/local/local_slide1.jpg" alt="トークイベントのスライド"></a>
+                            <a href="img/work/local/local_slide2.jpg"><img src="img/work/local/local_slide2.jpg" alt="トークイベントのスライド"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div id="work-modal-04" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/work/hinamatsuri/hina_poster.jpg">
+                    <div class="explain">
+                        <h3>「紫波のひなまつり」ポスター・チラシ</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>イベントの広告物制作業務</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                        </div>
+                        <p>紫波町内の商店街で開催されたひなまつり総合イベントのポスターとチラシです。</p>
+                        <p>町内の小中学生とその家族をメインターゲットに、イベントをきっかけに商店街内の普段入らないお店に入ってもらうことが要件で、コンセプトは「商店街に接点のある小中学生と家族が、イベントに興味を持ち足を運びたくなる広告」です。</p>
+                        <p>スタンプラリーがメイン行事であることから、実際に設置されるスタンプと、足跡のモチーフを巡らせて楽しげな雰囲気を印象付けています。
+                        商店街のイメージカラーの緑色をメインに、ひなまつりらしさと可読性のあるハイコントラストを両立した配色を施しました。
+                        若者向けを意識した初稿の配色は、屋外設置時に目立たないとの商店街店主の意見から、実用性を併せ取り入れた経緯もポイントです。
+                        </p>
+                        <figure>
+                            <figcaption>&#9660;チラシ（表面・裏面）</figcaption>
+                            <a href="img/work/hinamatsuri/hina_flyer_front.jpg"><img src="img/work/hinamatsuri/hina_flyer_front.jpg" alt="トークイベントのスライド"></a>
+                            <a href="img/work/hinamatsuri/hina_flyer_back.jpg"><img src="img/work/hinamatsuri/hina_flyer_back.jpg" alt="トークイベントのスライド"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div id="work-modal-05" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <div class="votebox">
+                        <img src="img/work/vote_banner/vote_shiwa_banner.png">
+                        <img src="img/work/vote_banner/vote_iwate_banner.png">
+                    </div>
+                    <div class="explain">
+                        <h3>選挙執行日告知バナー</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>HP掲載用告知バナーの制作業務</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>
+                        <p>紫波町HPのトップページに表示される、選挙執行日を知らせるバナーです。</p>
+                        <p>選挙名や執行日、イメージキャラクターを入れることを要件とし、実際に表示されるサイズの小ささを考慮しながら、各要素が目立つようにバランスを取って配置しました。
+                        選挙対象に合わせ、紫波町と岩手県のイメージカラーを使用している点もポイントです。</p>
+                    </div>
+                </div>
+            </div>
+            <div id="work-modal-06" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/work/furusatotaisi/furusatotaisi.jpg">
+                    <div class="explain">
+                        <h3>ふるさと大使の名刺</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>ふるさと大使用名刺の制作業務</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                        </div>
+                        <p>紫波町のふるさと大使・南部光隆氏の名刺です。</p>
+                        <p>「ふるさと大使」とは、町の魅力を町内外への発信と魅力向上を図り、町にゆかりのある方に委嘱する取り組みです。
+                        県外在住のふるさと大使が、町を知らない人々へ渡した際に魅力が伝わるように、二つ折りの名刺サイズ内にポイントをまとめています。</p>
+                        <p>ビジネスシーンでの使用を想定し、シックな色合いでありつつ、曲線のモチーフ・フォントやストライプで親しみやすさを印象付けています。</p>
+                    </div>
+                </div>
+            </div>
+            <div id="work-modal-07" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/work/townpr_meisi/townpromotion_meisi.png">
+                    <div class="explain">
+                        <h3>自分の名刺</h3>
+                        <div class="tag">
+                            <p class="Gtag worktag">実務</p>
+                            <p>業務で使用する自分の名刺制作</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>
+                            <p>紫波町タウンプロモーション推進員としての、自分の名刺です。</p>
+                            <p>タウンプロモーションの担い手として、町一番の魅力である「あたたかさ」をコンセプトにしています。裏面には自身が展開する紫波町×サイクリングのPRコンテンツを押し出しています。</p>
+                            <p>町のイメージカラーの紫色と、補色の黄色をメインに使いながら、柔らかいベージュカラーをベースに、文字や主線は茶色寄りの黒であたたかみのある配色にしています。</p>
                     </div>
                 </div>
             </div>
 
-            <div id="web-modal-02" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/web/kakurega/pc.png">
-                    <div class="explain">
-                        <h3>地元の軽食店の紹介サイト「隠れ家見つけました」</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="web-modal-03" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/web/tayama/PCtayama.jpg">
-                    <div class="explain">
-                        <h3>地域活性化支援サイト「いわて&times;おうちカフェ」</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>テーマ「岩手の食&times;ニューノーマル」</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="web-modal-04" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/web/tayama/PCtayama.jpg">
-                    <div class="explain">
-                        <h3>架空の物産ショップサイト「Vessel Teller」</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="web-modal-05" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/web/tayama/PCtayama.jpg">
-                    <div class="explain">
-                        <h3>卒業研究展・特設サイト（共同制作）</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="web-modal-06" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/web/tayama/PCtayama.jpg">
-                    <div class="explain">
-                        <h3>日本デザイン学会第一支部岩手大会HP（共同制作）</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
 
         </section>
 
+        <section class="grade2" id="gr2">
+            <h2>２学年（在学時課題）</h2>
+            <div class="thumb">
+                <div>
+                    <a class="modal-syncer" data-target="gr2-modal-01"><img src="img/thumb/2nd/donuts-pop.png" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-02"><img src="img/thumb/2nd/donuts-sic.png" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-03"><img src="img/thumb/2nd/drug.png" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-04"><img src="img/thumb/2nd/80s.png" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-05"><img src="img/thumb/2nd/bosyu-posta.png" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-06"><img src="img/thumb/2nd/OC.png" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-07"><img src="img/thumb/2nd/komonoire.jpg" alt="サムネイル"></a>
+                 </div>
+ 
+                 <div>
+                    <a class="modal-syncer" data-target="gr2-modal-08"><img src="img/thumb/2nd/mouse.jpg" alt="サムネイル"></a>
+                 </div>
+ 
+            </div>
+
+            <div id="gr2-modal-01" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/express/donuts-pop.png">
+                    <div class="explain">
+                        <h3>架空のドーナツショップのフライヤー（テーマ：ポップ）</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>実践デザイン論（受け手を意識した表現）</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>テーマを「ポップ」とした、ドーナツショップの新規開店フライヤーという条件での制作課題。</p><br>
+                        <p>折込チラシとしての使用目的であることも考慮し、半分より上の面で大体の情報が伝わるように配置しています。</p><br>
+                        <p>10代〜20代の子供、学生というターゲットに合わせ、中央で弾けるような配置やコミカル調のモチーフを使い、「ポップ」を表現しました。</p>
+                        <p>配色も、子供好きのするようなパステルな色合いで、締め色にも茶色を使い、明るい印象になるように設計しました。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-02" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/express/donuts-sic.png">
+                    <div class="explain">
+                        <h3>架空のドーナツショップのフライヤー（テーマ：シック）</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>実践デザイン論（受け手を意識した表現）</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                        </div>                        
+                        <p>テーマを「シック」とした、ドーナツショップの新規開店フライヤーという条件での制作課題。</p><br>
+                        <p>「ポップ」に対して、こちらは社会人が利用するドーナツショップという想定でのデザインです。</p><br>
+                        <p>店内の落ち着いた雰囲気や、利用する様子をイメージしやすくするように、写真を配置しました。</p>
+                        <p>また、全体の色をグレイッシュトーンにまとめ、余白を意識した配置にしています。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-03" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/express/drug.png">
+                    <div class="explain">
+                        <h3>架空の薬パッケージ</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>実践デザイン論（受け手を意識した表現）</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>課題条件：野球選手の「大谷翔平」を宣伝キャラクターとしている、架空の薬</p><br>
+                        <p>「大谷翔平」の投球のイメージから、薬の効き目の速さを連想し、「FAST」というロゴを作成.</p>
+                        <p>背景はスピード感を表す図面にしています。</p>
+                        <p>また、鎮痛剤という設定から、炎症を鎮める印象を持たせるように全体を青色で配色しています。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-04" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/express/80s.png">
+                    <div class="explain">
+                        <h3>架空のハンバーガーショップのフライヤー</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>実践デザイン論（受け手を意識した表現）</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                        </div>                        
+                        <p>課題テーマ：「80'sフィーバー」</p>
+                        <p>80年代がモチーフのハンバーガーショップを宣伝する広告ツールを制作する課題。</p>
+                        <p>ターゲットが80年代を謳歌した世代&equals;50代〜70代であることから、紙媒体を選択し、フライヤーを制作しました。</p><br>
+                        <p>普段触れることがない「80年代」を表現するモチーフ選びや、配色などを探るのが難しかったです。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-05" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/bosyu/bosyu-posta.png">
+                    <div class="explain">
+                        <h3>産技短・学生募集ビジュアル</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>実践デザイン論（受け手を意識した表現）</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>学校の学生を募集するビジュアルの制作課題。</p>
+                        <p>ターゲットは進学を考える高校生で、各高校や公共施設内に掲示する目的のポスターを制作しました。</p><br>
+                        <p>コンセプトは、「進路に迷う高校生の興味を引き、入学試験へ踏み込みたい気持ちになる」ビジュアル。</p>
+                        <p>現代の高校生の目に留まりそうなコミック調の人物絵で、今の進路に悩む自分から産技短へ入った自分への変化を、一面で表しています。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-06" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <video src="img/2nd/OCmovie/OC.mp4" controls>
+                        ※お使いのブラウザではこちらの動画を再生することができません</video>
+                    <div class="explain">
+                        <h3>オープンキャンパス・産業デザイン科展示用イメージ動画</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>製品デザイン応用実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/pr.png" alt="PremiereProアイコン">
+                        </div>                        
+                        <p>当校のオープンキャンパスで、産業デザイン科内の展示で設置するイメージ動画の制作をしました。</p><br>
+                        <p>展示全体のコンセプト「オモテとウラ」に合わせて、当学科で学ぶ「デザイン」の表と裏を正しく伝える目的で設計しています。</p>
+                        <p>「デザイン」の気楽そうなイメージは誤解であり、設計に時間をかけ、試行錯誤した末に「デザイン」されたものごとが完成する、ということを15秒の動画で伝えられるように構成。</p><br>
+                        <p>短時間でストーリーを組み立て、印象付ける動画を制作するのに試行錯誤しました。</p>
+                        <p>webサイトや印刷物とは違い、時間軸のある媒体を手掛けることは滅多にないので、貴重なデザイン経験になったと思います。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-07" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/craft/komonoire.jpg">
+                    <div class="explain">
+                        <h3>小物入れ（木工・漆塗り）</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>伝統工芸実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>木工での小物入れの制作課題。</p>
+                        <p>用途を考えるところから始め、設計図を描き起こし、設計図に沿って材料を組み立てました。</p><br>
+                        <p>自分の小物入れは、仕切りが取り外し可能で、横の切れ込みに差し込むとディスプレイ台にもなるという多機能を持たせたところが工夫点です。</p><br>
+                        <p>また、仕上げには漆塗りをし、伝統工芸の制作を実践することで身近に感じられるきっかけにもなりました。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gr2-modal-08" class="modal-content">
+                <a id="modal-close" class="button-link">&times;</a>
+                <div class="container">
+                    <img src="img/2nd/craft/mouse.jpg">
+                    <div class="explain">
+                        <h3>ペーパーウェイト（砂型鋳造）</h3>
+                        <div class="tag">
+                            <p class="Gtag G2">2学年</p>
+                            <p>伝統工芸実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>ペーパーウェイトの制作課題。</p>
+                        <p>砂型鋳造による金属加工の学習でもあります。</p>
+                        <p>普段使うことのない材料や加工方法で、自分の考えたプロダクトを制作することで、デザインの表現の幅を広げるきっかけになりました。</p><br>
+                        <p>ペーパーウェイトということで、いつも卓上に置けて持ち上げやすい物、からPCマウスを連想し、制作しました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="grade1" id="gr1">
-            <h2>１学年時</h2>
+            <h2>１学年（在学時課題）</h2>
             <div class="thumb">
                 <div>
                    <a class="modal-syncer" data-target="gr1-modal-01"><img src="img/thumb/1st/denkyu.png" alt="サムネイル"></a>
@@ -262,15 +637,28 @@
                     <img src="img/1st/oyo/main-visu.png">
                     <div class="explain">
                         <h3>卒業研究展・ビジュアル制作</h3>
-                        <p><span>製品デザイン基礎実習II</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                        <img src="img/1st/oyo/pc.png">
-                        <img src="img/1st/oyo/sp.png">
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>製品デザイン基礎実習II</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>コンセプトは「発信」</p>
+                        <p>この卒業研究展から、学生のアイデアを世間へ発信する、という意味を図面で表しました。</p>
+                        <p>電球が世界を発展させる発明であったように、学生の研究もいずれ世間一般に流通するものごとを産み出す要素につながるということを表現しています。</p><br>
+                        <p>他にも、！マークによる光の表現は、全学科の公式シンボルカラーを参照しており、各科それぞれのひらめきをイメージしています。</p>
+                        <p>電線は、？マークを描き、疑問から課題点を見つけ出し、解決策のアイデアをひらめくという流れを意識しています。</p>
+                        <p>といったように、図面の各モチーフは卒業研究展の意義や流れを象徴しています。</p>
+                        <figure>
+                            <figcaption>&#9660;ポスターでの使用イメージ</figcaption>
+                            <img src="img/1st/oyo/poster.png" alt="卒業研究展ポスター">
+                        </figure>
+                        <figure>
+                            <figcaption>&#9660;webサイト上での使用イメージ</figcaption>
+                            <img src="img/1st/oyo/pc.png">
+                            <img src="img/1st/oyo/sp.png">
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -281,13 +669,20 @@
                     <img src="img/1st/MM/MM1.png">
                     <div class="explain">
                         <h3>架空の動画サムネイル</h3>
-                        <p><span>マルチメディア実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>マルチメディア実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                        </div>                        
+                        <p>課題テーマ：動画投稿サイトにありがちなサムネイル</p>
+                        <p>DTPソフトでの制作の演習授業にて、課題テーマに沿って自由にアイデアを出し、Photoshopを使って制作した課題。</p>
+                        <p>自分が選んだテーマは、「ホラー系動画でよく見るレイアウト」でした。</p><br>
+                        <p>動画のサムネイルなので、小さく表示されていても動画の内容がわかるようになるべく文字を大きく、目立つように心がけました。</p>
+                        <p>添削では、「下部の文字のテクスチャで可読性を損なっている。塗りつぶすか、シャドーを消すとすっきりして読みやすくなる。」</p>
+                        <p>とのご指摘をいただき、印象を優先して過度な装飾をするより、情報の伝わりやすさを重視するという、デザインの根本的な考え方を学びました。</p><br>
+                        <p>また、Photoshopでの写真加工や配置、文字装飾などの操作を実践し、身につける機会にもなりました。</p>
                     </div>
                 </div>
             </div>
@@ -297,14 +692,19 @@
                 <div class="container">
                     <img src="img/1st/MM/MM2.png">
                     <div class="explain">
-                        <h3>学校内に設置するピクトグラム</h3>
-                        <p><span>マルチメディア実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <h3>校舎内の危険を注意喚起するピクトグラム</h3>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>安全衛生工学,<br>マルチメディア実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>校舎内にある危険な箇所を発見し、起こりうる事故を予測・注意を促すピクトグラムを制作する課題。</p>
+                        <p>自分が選んだ場所は、２部屋の間をつなぐ通路の横に設置された、物置部屋のドア。</p>
+                        <p>この通路が狭く、ドアの開閉の際、通行者にぶつかる危険性を予測し、その様子をピクトグラムで表しました。</p><br>
+                        <p>２色のピクトグラムという省略された図面で、危険な場面を表現するのは難しいことでした。</p>
+                        <p>危険な部分を強調し、不要な要素を取り除くという、インフォグラフィックの制作過程を経験することができた課題でした。</p>
                     </div>
                 </div>
             </div>
@@ -315,13 +715,20 @@
                     <img src="img/1st/MM/MM3.png">
                     <div class="explain">
                         <h3>名刺</h3>
-                        <p><span>マルチメディア実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>マルチメディア実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                        </div>                        
+                        <p>自分の名刺を制作する課題。</p>
+                        <p>名刺という小さな紙媒体の中に、自分に関する必要な情報を絞り、文字や図面で表すという制作です。</p><br>
+                        <p>名刺の役割を考え、まず自分の名前を目に入れてもらえるように表の先頭に大きく記述。</p>
+                        <p>一目で所属、連絡先が分かるように、文字の情報は少なく表にまとめました。</p><br>
+                        <p>背景や裏面の図面では、自分の専攻分野がwebデザインであることを象徴する、PCモニターを描画しています。</p>
+                        <p>デジタル媒体を通して、世の中の様々な情報を伝えるデザインを行う様子を、幾何学系のモチーフで抽象的に表現しました。</p>
                     </div>
                 </div>
             </div>
@@ -332,13 +739,17 @@
                     <img src="img/1st/MM/MM4.png">
                     <div class="explain">
                         <h3>自己紹介シート</h3>
-                        <p><span>マルチメディア実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>マルチメディア実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>ターゲットは初対面の相手で、自分のことを名刺より詳しくかつ、まとまった情報量で伝えるためのシートの制作課題。</p>
+                        <p>A4サイズの紙面に印刷するシートとして作成しています。</p><br>
+                        <p>コンセプトとして、初対面の方へ向けて堅くなりすぎず、コミカルで親しみやすく伝わるようなデザインにしました。</p>
+                        <p>項目のまとめ方や、Z型に流れる導線配置、自分の印象を与える配色など、設計にこだわっています。</p>
                     </div>
                 </div>
             </div>
@@ -349,13 +760,19 @@
                     <img src="img/1st/MM/MM5.png">
                     <div class="explain">
                         <h3>架空のチョコレートパッケージ</h3>
-                        <p><span>マルチメディア実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>マルチメディア実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>課題テーマ：季節&times;チョコレート</p>
+                        <p>自分が選んだテーマは「夏のチョコレート」</p>
+                        <p>夏という季節から、海のような爽快さを想像し、「じっとりとした暑さでも、食べれば気分爽快になる」というコンセプトを立てました。</p><br>
+                        <p>気分の切り替えを表す「Switch」と「chocolate」を掛け合わせたロゴも自分で考え、デザインにこだわりました。</p>
+                        <p>背景は夏の海の波に乗り、飛沫が飛ぶようなモチーフの形や配置をしています、</p><br>
+                        <p>配色も、ブルーベリーやミントの味を表現しながら、チョコであることも伝わるように青色と茶色を取り入れています。</p>
                     </div>
                 </div>
             </div>
@@ -366,13 +783,17 @@
                     <img src="img/1st/MM/MM6.png">
                     <div class="explain">
                         <h3>架空の地図</h3>
-                        <p><span>マルチメディア実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>マルチメディア実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ai.png" alt="Illustratorアイコン">
+                        </div>                        
+                        <p>指定された地図の情報を基に、簡略化した図面を作成するという課題。</p><br>
+                        <p>地図であるからには、位置関係や道の形状などを再現しつつ、必要な情報が一目で分かるように簡略化する必要があります。</p>
+                        <p>文字の位置や周囲の建物の抜き出し、目的地の強調の仕方など、情報整理に試行錯誤しました。</p><br>
+                        <p>配色も、シンプルでありながら見やすい色使いを心がけました。</p>
                     </div>
                 </div>
             </div>
@@ -382,14 +803,17 @@
                 <div class="container">
                     <img src="img/1st/dessin/dessin1.jpg">
                     <div class="explain">
-                        <h3>石膏像（立方体)</h3>
-                        <p><span>デッサン</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <h3>石膏像（立方体）</h3>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>デッサン</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>デザインに欠かせない、形状把握能力を身につけるためのデッサンの授業での課題。</p>
+                        <p>最初の課題は立方体というシンプルなモチーフでした。</p><br>
+                        <p>しかし、１時間で観察・画面内の位置取り・下書き・陰影の描き込みまで行うのは、時間配分能力が試されるものであると実感しました。</p>
                     </div>
                 </div>
             </div>
@@ -399,14 +823,17 @@
                 <div class="container">
                     <img src="img/1st/dessin/dessin2.jpg">
                     <div class="explain">
-                        <h3>石膏像（円柱)</h3>
-                        <p><span>デッサン</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <h3>石膏像（円柱）</h3>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>デッサン</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>２回目のデッサンの課題は、円柱。</p>
+                        <p>立方体とは違い、曲線があるという点では、描画の難易度が上がりました。</p><br>
+                        <p>また、曲面があることで陰影にグラデーションがかかり、その濃淡を捉えることの難しさを実感しました。</p>
                     </div>
                 </div>
             </div>
@@ -466,14 +893,17 @@
                 <div class="container">
                     <img src="img/1st/dessin/dessin3.jpg">
                     <div class="explain">
-                        <h3>石膏像（球体)</h3>
-                        <p><span>デッサン</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <h3>石膏像（球体）</h3>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>デッサン</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>３回目のデッサンの課題は球体。</p>
+                        <p>輪郭と、全面曲面の物体を手描きで再現するのは、形状把握力が試されるものでした。</p><br>
+                        <p>物体の彩色も、陰影だけでなく地面の光の反射があることを考慮するといった観察眼が必要な課題でした。</p>
                     </div>
                 </div>
             </div>
@@ -483,14 +913,16 @@
                 <div class="container">
                     <img src="img/1st/dessin/dessin4.jpg">
                     <div class="explain">
-                        <h3>石膏像（円錐)</h3>
-                        <p><span>デッサン</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <h3>石膏像（円錐）</h3>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>デッサン</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>４回目のデッサンの課題は円錐。</p>
+                        <p>自分の観察位置の影響で物体に逆光がかかっており、その再現に注力したところがポイントです。</p>
                     </div>
                 </div>
             </div>
@@ -501,13 +933,15 @@
                     <img src="img/1st/dessin/dessin5.png">
                     <div class="explain">
                         <h3>自分の手</h3>
-                        <p><span>デッサン</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>デッサン</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>５回目のデッサンは、好きなポーズの自分の手を観察し、描写するという課題。</p>
+                        <p>幾何学形の石膏より複雑になった形や質感、色合いを捉えるのは、時間がかかる作業でした。</p>
                     </div>
                 </div>
             </div>
@@ -518,13 +952,18 @@
                     <img src="img/1st/dessin/dessin6.jpg">
                     <div class="explain">
                         <h3>学校内の廊下</h3>
-                        <p><span>デッサン</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>デッサン</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>建物のデッサンの課題。</p>
+                        <p>校舎内を撮影した写真を基に、忠実に再現するものでした。</p><br>
+                        <p>建物の描写には遠近法に則って規則的な線を引くという技術が必要で、紙面上でこれを行うのは難しいものでした。</p>
+                        <p>また、元の写真は一回り小さく、これを計算して拡大しながら描き起こすのに時間がかかりました。</p>
+                        <p>建物内は映り込む物体が多く、それぞれの色や陰影を再現することも、繊細な把握能力が試されました。</p>
                     </div>
                 </div>
             </div>
@@ -535,13 +974,16 @@
                     <img src="img/1st/zokei/zokei1.png">
                     <div class="explain">
                         <h3>平面構成・テーマ「落下」</h3>
-                        <p><span>造形実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>造形実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>「落下」を三角形と円の２つのモチーフのみで構成し、表現する課題。</p><br>
+                        <p>限られた形を位置や大きさ、重なりなどでテーマを表すのは、デザインに必要な抽象表現能力が身に付くものだと思いました。</p>
+                        <p>正方形という限られた枠内で落下の動きを表すために、奥行きが感じれるように形を調整しました。</p>
                     </div>
                 </div>
             </div>
@@ -552,13 +994,16 @@
                     <img src="img/1st/zokei/zokei2.png">
                     <div class="explain">
                         <h3>平面構成・テーマ「オノマトペ」</h3>
-                        <p><span>造形実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>造形実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>自分が選んだオノマトペ「ほわほわ」を表現した平面構成です。</p><br>
+                        <p>「ほわほわ」の感じは、「ふわふわ」のような若干違うオノマトペと混同されないように、適した形を考える必要があるとことろが難しかったです。</p>
+                        <p>また、柔らかさが伝わるグラデーションを彩色で表現するというのも、平面構成の能力として身に付く学びになりました。</p>
                     </div>
                 </div>
             </div>
@@ -569,13 +1014,15 @@
                     <img src="img/1st/zokei/zokei3.png">
                     <div class="explain">
                         <h3>自然観察</h3>
-                        <p><span>造形実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>造形実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>学校敷地内にある植物を観察し、スケッチするという課題。</p><br>
+                        <p>形状を把握して描写する他、茎の別れ方、花弁の付き方、葉の形状など細かく観察することで、分析する力を備えられる課題でした。</p>
                     </div>
                 </div>
             </div>
@@ -586,13 +1033,16 @@
                     <img src="img/1st/shikisai/sikisai1.jpg">
                     <div class="explain">
                         <h3>彩色練習（三原色の純色・混色）</h3>
-                        <p><span>色彩実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>色彩実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>三原色の絵の具を使って、タイル状に塗るという課題。</p><br>
+                        <p>右側の混色では、マスの数に合わせて段階的に色のグラデーションを作るもので、細かな色彩感覚が必要でした。</p>
+                        <p>絵の具での混色というのも、分量や色を見ながら段階を調整するのが難しく、苦戦しました。</p>
                     </div>
                 </div>
             </div>
@@ -603,13 +1053,16 @@
                     <img src="img/1st/shikisai/sikisai2.jpg">
                     <div class="explain">
                         <h3>点描による並置混色の演習（三原色の混色）</h3>
-                        <p><span>色彩実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>色彩実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>印刷技術や点描画に用いられる、並置混色という彩色方法で、三原色の混色をする課題。</p><br>
+                        <p>３原色を一つ一つドットを打ち、大きさや点の位置に注意しながらグラデーションを作るのは難しい作業でした。</p>
+                        <p>印刷の仕組みや混色の知識を実践的に学ぶことができたと思います。</p>
                     </div>
                 </div>
             </div>
@@ -620,13 +1073,17 @@
                     <img src="img/1st/shikisai/sikisai3.jpg">
                     <div class="explain">
                         <h3>点描による並置混色の演習（りんごの点描）</h3>
-                        <p><span>色彩実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>色彩実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>点描でりんごの写真の模写をするという課題。</p><br>
+                        <p>並置混色の知識を使い、下の写真の色合いを点描で再現しました。</p>
+                        <p>物体の色味だけでなく、陰影も考慮しながら点を打つのは、計算が必要な作業でした。</p>
+                        <p>黄色から打ち、赤色の点で赤みを付け、黒い色または陰影部分を青色で打つ、という順番にすると、分かりやすく綺麗に描写できたと感じました。</p>
                     </div>
                 </div>
             </div>
@@ -637,219 +1094,28 @@
                     <img src="img/1st/shikisai/sikisai4.jpg">
                     <div class="explain">
                         <h3>ポスタリゼーション</h3>
-                        <p><span>色彩実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
+                        <div class="tag">
+                            <p class="Gtag G1">1学年</p>
+                            <p>色彩実習</p>
+                        </div>
+                        <div class="tool">
+                            <img src="img/ps.png" alt="Photoshopアイコン">
+                            <img src="img/analog.png" alt="アナログツールアイコン">
+                        </div>                        
+                        <p>自分の好きな人物の写真を階調化させ、紙面に描くという課題。</p><br>
+                        <p>Photoshopのツールでカラー写真を白黒の8階調へ変換させ、その画像を基に紙面へ転写。</p>
+                        <p>8階調の色には、自分で色彩・彩度・明度を調整した8色を当てました。この時、色彩を赤色一色ではなく、暗色を青みがけることで単調化を防ぐように工夫しました。</p>
+                        <p>階調数を多くした分、細かく描写することになり、完成までに多くの時間がかかりました。</p>
                     </div>
                 </div>
             </div>
 
         </section>
-
-        <section class="grade2" id="gr2">
-            <h2>２学年時</h2>
-            <div class="thumb">
-                <div>
-                    <a class="modal-syncer" data-target="gr2-modal-01"><img src="img/thumb/2nd/donuts-pop.png" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-02"><img src="img/thumb/2nd/donuts-sic.png" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-03"><img src="img/thumb/2nd/drug.png" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-04"><img src="img/thumb/2nd/80s.png" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-05"><img src="img/thumb/2nd/bosyu-posta.png" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-06"><img src="img/thumb/2nd/OC.png" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-07"><img src="img/thumb/2nd/komonoire.jpg" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-08"><img src="img/thumb/2nd/mouse.jpg" alt="サムネイル"></a>
-                 </div>
- 
-                 <div>
-                    <a class="modal-syncer" data-target="gr2-modal-09"><img src="img/thumb/img1.jpg" alt="サムネイル"></a>
-                 </div>
-            </div>
-
-            <div id="gr2-modal-01" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/express/donuts-pop.png">
-                    <div class="explain">
-                        <h3>架空のドーナツショップのフライヤー（テーマ：ポップ）</h3>
-                        <p><span>実践デザイン論（受け手を意識した表現）</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-02" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/express/donuts-sic.png">
-                    <div class="explain">
-                        <h3>架空のドーナツショップのフライヤー（テーマ：シック）</h3>
-                        <p><span>実践デザイン論（受け手を意識した表現）</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-03" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/express/drug.png">
-                    <div class="explain">
-                        <h3>架空の薬パッケージ</h3>
-                        <p><span>実践デザイン論（受け手を意識した表現）</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-04" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/express/80s.png">
-                    <div class="explain">
-                        <h3>架空のハンバーガーショップのフライヤー</h3>
-                        <p><span>実践デザイン論（受け手を意識した表現）</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-05" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/bosyu/bosyu-posta.png">
-                    <div class="explain">
-                        <h3>産技短・学生募集ビジュアル</h3>
-                        <p><span>実践デザイン論（受け手を意識した表現）</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-06" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <video src="img/2nd/OCmovie/OC.mp4" controls>
-                        ※お使いのブラウザではこちらの動画を再生することができません</video>
-                    <div class="explain">
-                        <h3>オープンキャンパス・産業デザイン科展示用イメージ動画</h3>
-                        <p><span>製品デザイン応用実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-07" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/craft/komonoire.jpg">
-                    <div class="explain">
-                        <h3>小物入れ（木工・漆塗り）</h3>
-                        <p><span>伝統工芸実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-08" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/craft/mouse.jpg">
-                    <div class="explain">
-                        <h3>ペーパーウェイト（砂型鋳造）</h3>
-                        <p><span>伝統工芸実習</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="gr2-modal-09" class="modal-content">
-                <a id="modal-close" class="button-link">&times;</a>
-                <div class="container">
-                    <img src="img/2nd/craft/mouse.jpg">
-                    <div class="explain">
-                        <h3>文化祭物販・オリジナルグッズ制作</h3>
-                        <p><span>授業外制作</span></p>
-                        <p>ここに説明を書くよ〜〜〜</p>
-                        <p>ここはこう難しくてすごい時間かかった</p>
-                        <p>よくがんばったもんだ</p>
-                        <p>うんうん</p>
-                        <p>ほげほげふがふが</p>
-                        <p>うごうごるーが</p>
-                    </div>
-                </div>
-            </div>
 
             <div class="center">
-                <a class="detail" href="index.html"><span class="material-icons-outlined">chevron_left</span>ホームへ戻る</a>
+                <a href="index.html"><span class="material-icons-outlined">chevron_left</span>トップページへ戻る</a>
             </div>
         
-        </section>
-
     </main>
 
     <footer>
@@ -865,9 +1131,6 @@
                     </li>
                     <li>
                         <a href="index.html#profile">PROFILE</a>
-                    </li>
-                    <li>
-                        <a href="info.html">INFOMATION</a>
                     </li>
                 </ul>
             </nav>

@@ -2,17 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
     <title>トップページ｜About Sato Haruka</title>
     
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script  type="text/javascript" src="js/main.js"></script>
 </head>
 <!-- ここまで設定 -->
 
@@ -32,9 +33,8 @@
                     <i></i>
                     <i></i>
                     <i></i>
-                </span>
-            </div>
-            
+            </span>
+        </div>
             <!-- ↓　ナビゲーション（ハンバーガーの具）↓ -->
             <nav class="menu">
                 <div class="menu_wrap">
@@ -43,27 +43,25 @@
                             <a href="#top">TOP</a>
                         </li>
                         <li>
+                            <a href="#profile">PROFILE</a>
+                        </li>
+                        <li>
                             <a href="#ptf">PORTFOLIO</a>
                         </li>
-                        
                         <ul class="potofo-li">
                             <li>
                                 <a href="portfolio.html#web">WEBSITE</a>
                             </li>
-                            <li>
-                                <a href="portfolio.html#gr1">1st GRADE</a>
+                                                        <li>
+                                <a href="portfolio.html#work">WORK</a>
                             </li>
                             <li>
                                 <a href="portfolio.html#gr2">2nd GRADE</a>
                             </li>    
+                            <li>
+                                <a href="portfolio.html#gr1">1st GRADE</a>
+                            </li>
                         </ul>
-
-                        <li>
-                            <a href="#profile">PROFILE</a>
-                        </li>
-                        <li>
-                            <a href="#info">INFOMATION</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -72,205 +70,247 @@
     <!-- ここまでヘッダー -->
     
     <div class="main_v" id="top">
-        <div class="back_copy"></div>
-        <p>岩手の学校で一歩一歩、web制作を中心としたデザインの勉強中。<br>ここは、その過程を記録した佐藤遥華のポートフォリオサイトです。</p>
+        <div class="container">
+            <div class="mainV_box">
+                <div class="img_box">
+                    <img src="img/top_PC.png">
+                </div>
+                <div class="copy">
+                    <p><span>私のWEBサイトは</span><br><span>経験と試行錯誤から</span></p>
+                    <div class="copy_detail">
+                        <p>こちらは、その制作過程を記録する、<br>佐藤遥華のポートフォリオサイトです。</p>
+                        <p>わたしの「これまで」と「これから」を知り、WEB制作に挑む様子を感じ取っていただけますと幸いです。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#profile">scroll<br>▼</a>
     </div>
 
     <main>
-        <section class="ptf_thumb" id="ptf">
-            <h2>制作記録</h2>
-
-            <div class="thumb">
-                <a href="portfolio.html#web">
-                    <div class="item web-c">
-                        <div class="item-img">
-                            <img src="img/thumb/web/tayama.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（webサイト）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="portfolio.html#web">
-                    <div class="item web-c">
-                        <div class="item-img">
-                            <img src="img/thumb/web/kakurega.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（webサイト）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="portfolio.html#web">
-                    <div class="item web-c">
-                        <div class="item-img">
-                            <img src="img/thumb/web/iwatecafe.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（webサイト）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="portfolio.html#gr1">
-                    <div class="item gr1">
-                        <div class="item-img">
-                            <img src="img/thumb/1st/denkyu.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（１学年時）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="portfolio.html#gr1">
-                    <div class="item gr1">
-                        <div class="item-img">
-                            <img src="img/thumb/1st/MM5.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（１学年時）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-            <a href="portfolio.html#gr1">
-                    <div class="item gr1">
-                        <div class="item-img">
-                        <img src="img/thumb/1st/MM6.png" alt="サムネイル">
-                    </div>
-                    <div class="item-text">
-                        <p>制作物一覧（１学年時）</p>
-                        <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                    </div>
-                    </div>
-                </a>
-
-               <a href="portfolio.html#gr2">
-                    <div class="item gr2">
-                        <div class="item-img">
-                            <img src="img/thumb/2nd/donuts-pop.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（２学年時）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-               <a href="portfolio.html#gr2">
-                    <div class="item gr2">
-                        <div class="item-img">
-                            <img src="img/thumb/2nd/bosyu-posta.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（２学年時）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-
-               <a href="portfolio.html#gr2">
-                    <div class="item gr2">
-                        <div class="item-img">
-                            <img src="img/thumb/2nd/OC.png" alt="サムネイル">
-                        </div>
-                        <div class="item-text">
-                            <p>制作物一覧（２学年時）</p>
-                            <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="center">
-                <a class="detail" href="portfolio.html">制作物を詳しく見る<span class="material-icons-outlined">chevron_right</span></a>
-            </div>
-        </section>
-
         <section class="profile" id="profile">
-            <h2>自己紹介</h2>
             <div class="white_back">
+            <h2>自己紹介</h2>
                 <div class="status">
                     <img src="img/prof.png">
                     <div class="container">
                         <p class="name">佐藤 遥華<span>/</span>Sato Haruka</p>
-                        <p>岩手県立産業技術短期大学校<br>
-                            産業デザイン科 ２学年<br>
-                            情報伝達（WEBデザイン）コース専攻</p>
-                        <p>デザイナー駆け出しです。<br>粘り強さは誰にも負けない自信があります！</p>
+                        <p>岩手県立産業技術短期大学校　産業デザイン科<br>
+                            情報伝達コース（WEBデザイン）専攻　卒業</p>
+                        <p>紫波町役場・会計年度任用職員<br>
+                            元 紫波町タウンプロモーション推進員</p>
+                        <p class="explain">
+                            <span>幼少期からPCに触れて育ち、好きなマスコットキャラクターの公式サイトやECサイトなど、様々なWebサイトの情報伝達のあり方に関心を持っていました。</span><br>
+                            高校でWEBデザイナーという職業があると知り、発信する側に立つことを希望して岩手県立産業技術短期大学校へ入学。大学校ではデザインの基礎知識やWEB制作の専門知識を学び、webサイトの制作で人々の思いを繋げられることの楽しさを実感しました。<br>
+                            卒業後、地元の役場にて１年間の「タウンプロモーション」活動を通し、広報業務やデザインの実務制作を経験。地域住民や制作に関わる人々とのやりとりを通じ、デザインで町の課題を解決することで、感謝の声を間近に聞くことに喜びとやりがいを感じました。現在、WEBデザイナーでの就職を目指し日々試作・勉強中です。</p>
+                    </div>
+                </div>
+                <div class="personal">
+                    <h3>PERSONAL</h3>
+                    <div class="container">
+                        <div>
+                            <img src="img/hammer.png" alt="石橋を叩くアイコン">
+                            <p>慎重</p>
+                            <p class="explain"></p>
+                        </div>
+                        <div>
+                            <img src="img/find.png" alt="新発見アイコン">
+                            <p>新しい物事が好き</p>
+                            <p class="explain"></p>
+                        </div>
+                        <div>
+                            <img src="img/fire.png" alt="燃えるアイコン">
+                            <p>負けず嫌い</p>
+                            <p class="explain"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>スキル</h3>
+                    <h3>SKILL</h3>
                     <div class="container">
+                        <img src="img/skill-know.png">
                         <div>
-                            <img src="img/skill-know.png">
                             <h4>知識</h4>
                             <p>色彩/造形/レイアウト</p>
-                        </div>
-
-                        <div>
-                            <img src="img/skill-tec.png">
-                            <h4>技術</h4>
-                            <p>Adobe製ソフトウェア</p>
-                                <ul>
-                                    <li>Illustrator</li>
-                                    <li>Photoshop</li>
-                                    <li>XD</li>
-                                    <li>Indesign</li>
-                                </ul><br>
-                            <p>コーディング</p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript（jQuery）</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <img src="img/skill-idea.png">
-                            <h4>発想</h4>
-                            <p>デザイン思考</p>
+                            <p class="explain">情報設計に必要な、視覚デザインの基礎知識を持ちます。<br>色、形、配置による機能や印象を考えてデザインしています。</p>
                         </div>
                     </div>
+                    <div class="container idea">
+                        <div class="SP_idea">
+                            <h4>発想</h4>
+                            <p>デザイン思考</p>
+                            <p class="explain">制作に入る前に、対象の課題の解決方法を深く考慮します。<br>ターゲットや利用場面などに合わせて、効果を設計する、相手目線のデザインを心がけます。</p>
+                        </div>
+                        <img src="img/skill-idea.png">
+                    </div>
+                    <h4 class="tec-h4">技術</h4>
+                    <div class="tec-cont">
+                        <img src="img/skill-tec.png">
+                        <div class="tec">
+                            <div>
+                                <p>コーディング</p>
+                                <ul>
+                                    <li class="html">HTML</li>
+                                    <li class="css">CSS</li>
+                                    <li class="js">JavaScript<br>（jQuery）</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>Adobeソフトウェア</p>
+                                <ul>
+                                    <li class="ai">Illustrator</li>
+                                    <li class="ps">Photoshop</li>
+                                    <li class="xd">XD</li>
+                                    <li class="pr">PremierePro</li>
+                                </ul><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec-ex">
 
-                    <h3>これから</h3>
-                    <p>日々成長を目指して、常に新しい知識や技術を取り入れる<br>
-                        向上心を持っていきたいと思っています。</p>
+                        <p class="explain">コーディングは意味が通るように組むことを心がけています。<br>人にも、機械にも理解されるコードを作ります。最適を目指して、新しい技術を模索し続けます。</p>
+                    </div>
                 </div>
-            </div>
+
+                <div class="future">
+                    <h3>FUTURE</h3>
+                    <p>常に新しいものごとを楽しみながら学び、吸収していきます。</p>
+                    <p>世の中の魅力を発見し、表現方法を模索しながら伝えていける人になりたいと思います。</p>
+                    </div>
+                </div>
+
         </section>
 
-        <section class="info" id="info">
-            <h2>近況報告</h2>
-            <div class="white_back">
-                <article>
-                    <time datetime="2022-11-10">2022/11/10</time>
-                    <h3>ポートフォリオサイト公開</h3>
-                    <p>当サイトをオンライン上に公開しました。</p>
-                    <a href="info.html">詳しく読む<span class="material-icons-outlined">chevron_right</span></a>
-                </article>
+        <section class="ptf_thumb white_back" id="ptf">
+            <div class="widG">
+            <h2>制作記録</h2>
+                <div class="web_about">
+                    <div class="ws-cont">
+                        <img class="web-show" src="img/web/SCR/PC_SCR.png">
+                    </div>
+                    <div class="explain">
+                        <h3>WEBSITES</h3>
+                        <P>在学時の授業課題や、授業外で制作したWEBサイトを紹介します。</P>
+                        <ul>
+                            <li class="web0 select">
+                                <a href="websites/SCR.html">S×C×R</a>
+                            </li>
+                            <li class="web1">
+                                <a href="websites/tayama.html">田山の果汁</a>
+                            </li>
+                            <li class="web2">
+                                <a href="websites/sangitan.html">産技短展</a>
+                            </li>
+                            <li class="web3">
+                                <a href="websites/homecafe.html">いわて&times;おうちカフェ</a>
+                            </li>
+                            <li class="web4">
+                                <a href="websites/soboku.html">素朴な継承</a>
+                            </li>
+                            <li class="web5">
+                                <a href="websites/kakurega.html">隠れ家見つけました</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="others_about">
+                    <div class="explain">
+                        <h3>OTHERS</h3>
+                        <P>その他の授業科目や業務での制作物です。WEBサイトを作るのに必要なデザインの基礎づくりのため、様々な媒体を通して学んでいます。</P>
+                    </div>
 
-                <article>
-                    <time datetime="2022-11-09">2022/11/09</time>
-                    <h3>ポートフォリオサイト完成</h3>
-                    <p>長い期間を経てようやく完成しました。</p>
-                    <a href="info.html">詳しく読む<span class="material-icons-outlined">chevron_right</span></a>
-                </article>
-            </div>
+                    <div class="SP_wrap">
+                    <div class="slick01 slick-slider">
+                        <div  class="slick-slide">
+                        <a href="portfolio.html#gr1">
+                            <div class="item gr1">
+                                <div class="item-img">
+                                    <img src="img/thumb/1st/denkyu.png" alt="サムネイル">
+                                </div>
+                                <div class="item-text">
+                                    <p>制作物一覧（１学年時）</p>
+                                    <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
 
-            <div class="center">
-                <a class="detail" href="info.html">すべての記事を見る<span class="material-icons-outlined">chevron_right</span></a>
-            </div>
+                        <div  class="slick-slide">
+                        <a href="portfolio.html#gr1">
+                            <div class="item gr1">
+                                <div class="item-img">
+                                    <img src="img/thumb/1st/MM5.png" alt="サムネイル">
+                                </div>
+                                <div class="item-text">
+                                    <p>制作物一覧（１学年時）</p>
+                                    <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
 
+                        <div  class="slick-slide">
+                            <a href="portfolio.html#gr1">
+                                <div class="item gr1">
+                                    <div class="item-img">
+                                    <img src="img/thumb/1st/MM6.png" alt="サムネイル">
+                                    </div>
+                                    <div class="item-text">
+                                        <p>制作物一覧（１学年時）</p>
+                                        <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div  class="slick-slide">
+                        <a href="portfolio.html#gr2">
+                            <div class="item gr2">
+                                <div class="item-img">
+                                    <img src="img/thumb/2nd/donuts-pop.png" alt="サムネイル">
+                                </div>
+                                <div class="item-text">
+                                    <p>制作物一覧（２学年時）</p>
+                                    <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+
+                        <div  class="slick-slide">
+                        <a href="portfolio.html#gr2">
+                            <div class="item gr2">
+                                <div class="item-img">
+                                    <img src="img/thumb/2nd/bosyu-posta.png" alt="サムネイル">
+                                </div>
+                                <div class="item-text">
+                                    <p>制作物一覧（２学年時）</p>
+                                    <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+
+                        <div  class="slick-slide">
+                        <a href="portfolio.html#gr2">
+                            <div class="item gr2">
+                                <div class="item-img">
+                                    <img src="img/thumb/2nd/OC.png" alt="サムネイル">
+                                </div>
+                                <div class="item-text">
+                                    <p>制作物一覧（２学年時）</p>
+                                    <p><span class="material-icons-outlined">keyboard_double_arrow_right</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>        
+                    <div class="center">
+                        <a class="detail" href="portfolio.html">制作物を詳しく見る<span class="material-icons-outlined">chevron_right</span></a>
+                    </div>
         </section>
     </main>
     
@@ -288,15 +328,42 @@
                 <li>
                     <a href="#profile">PROFILE</a>
                 </li>
-                <li>
-                    <a href="info.html">INFOMATION</a>
-                </li>
             </ul>
         </div>
-        <p class="copyright">Copyright© 2021 SatoHaruka All rights reserved.</p>
+        <p class="copyright">Copyright&copy; 2021 SatoHaruka All rights reserved.</p>
 
     </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script  type="text/javascript" src="js/main.js"></script>
+    <script>
+        // ▼スライドショー設定
+
+            $('.slick01').slick({
+                centerMode: true,
+                centerPadding: '215px',
+                autoplay: true,
+                arrows: false,
+
+            //     responsive: [{
+            //         breakpoint: 768,
+            //         settings: {
+            //         autoplay: false,
+            //         slidesToShow: 1,
+            //         }
+            //     },        
+            //     {
+            //         breakpoint: 480,
+            //         settings: {
+            //         autoplay: false,
+            //         slidesToShow: 1,
+            //         }
+            //     },
+            // ]
+            });
+
+    </script>
 </body>
 
-<!-- ここまでソースのチェックをしていただいてありがとうございます＊お疲れ様です -->
+<!-- ここまでソースのチェックをしていただきありがとうございます -->
 </html>
