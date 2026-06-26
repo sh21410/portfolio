@@ -1,3 +1,4 @@
+// ▼ハンバーガーメニュー
 $(function () {
         $('.hamburger').on('click', function () {
             $('.hamburger, .menu').toggleClass('show');
@@ -5,6 +6,55 @@ $(function () {
     });
 
 // alert('動作OKらしいよ');
+
+
+
+// ▼webサイト紹介切り替え
+$(function(){
+    $('.web0').hover(
+        function (){
+            $('.web-show').attr("src",'img/web/SCR/PC_SCR.png');
+            $('.web0').toggleClass('select');
+        },
+        function (){
+            $('.web0').removeClass('select');
+        });
+});
+$(function(){
+    $('.web1').hover(
+        function (){
+            $('.web-show').attr("src",'img/web/tayama/PCtayama.png');
+            $('.web1').toggleClass('select');
+        });
+});
+$(function(){
+    $('.web2').hover(
+        function (){
+            $('.web-show').attr("src",'img/web/sangitanten/pc.png');
+            $('.web2').toggleClass('select');
+        });
+});
+$(function(){
+    $('.web3').hover(
+        function (){
+            $('.web-show').attr("src",'img/web/homecafe/sp.png');
+            $('.web3').toggleClass('select');
+        });
+});
+$(function(){
+    $('.web4').hover(
+        function (){
+            $('.web-show').attr("src",'img/web/soboku/soboku-pc.png');
+            $('.web4').toggleClass('select');
+        });
+});
+$(function(){
+    $('.web5').hover(
+        function (){
+            $('.web-show').attr("src",'img/web/kakurega/pc.png');
+            $('.web5').toggleClass('select');
+        });
+});
 
 
 // ▼モーダルウィンドウの設定
@@ -92,8 +142,8 @@ $(function(){
     
             //コンテンツ(#modal-content)の幅、高さを取得
             // jQueryのバージョンによっては、引数[{margin:true}]を指定した時、不具合を起こします。
-    //		var cw = $( nowModalSyncer ).outerWidth( {margin:true} ) ;
-    //		var ch = $( nowModalSyncer ).outerHeight( {margin:true} ) ;
+        //		var cw = $( nowModalSyncer ).outerWidth( {margin:true} ) ;
+        //		var ch = $( nowModalSyncer ).outerHeight( {margin:true} ) ;
             var cw = $( nowModalSyncer ).outerWidth() ;
             var ch = $( nowModalSyncer ).outerHeight() ;
     
