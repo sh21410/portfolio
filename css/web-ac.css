@@ -1,0 +1,183 @@
+main {
+    width: 100%;
+    height: fit-content;
+    margin-top: 5em;
+}
+
+article {
+    width: 60em;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3em 4em;
+    margin-bottom: 2em;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+}
+
+.img_ex {
+    width: 40em;
+    margin: 0 auto;
+}
+.img_ex img {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 50%;
+    margin-bottom: 1em;
+}
+
+h1 {
+    text-align: left;
+}
+
+h1 a {
+    font-size: x-large;
+    margin: 0.5em 0 1em;
+}
+
+h2 {
+    margin: 3em 0 1em;
+}
+
+h3 {
+    font-size: large;
+}
+
+br {
+    margin-bottom: 1em;
+    display: block;
+    content: '';
+}
+
+section ul {
+    padding: 1em 1em 1em 2em;
+    margin: 1em 0;
+    background-color: #e7f1ef;
+}
+section ul li {
+    list-style: square;
+    line-height: 2em;
+    font-size: smaller;
+    margin-bottom: 0.5em;
+    color: #666;
+}
+
+dl {
+    line-height: 2em;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+dt {
+    font-size: large;
+    float: left;
+    width: 6em;
+}
+
+dd {
+    color: #666;
+    border-bottom: solid 1px #ddd;
+    padding: 0 0 0 7em;
+}
+dd:last-of-type {
+    border-bottom: none;
+}
+
+.type.container {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: auto;
+    margin: 1em 0;
+}
+
+.tag {
+    font-size: smaller;
+    align-items: center;
+    display: flex;
+    width: min-content;
+    height: min-content;
+}
+.tag p:nth-of-type(2) {
+    color: #3f8c7e;
+    width: 15em;
+}
+.tag br, dl br{
+    margin-bottom: 0;
+}
+
+.Gtag {
+    color: #fff;
+    margin-right: 1em;
+    padding: 0.2em 0.5em;
+    letter-spacing: 2px;
+    min-width: fit-content;
+}
+
+.Gtag.G12 {
+    background-image: linear-gradient(to right, #6fd7c4, #e88f74);
+}
+
+.Gtag.G1 {
+    background-color: #6fd7c4;
+}
+
+.Gtag.G2 {
+    background-color: #e88f74;
+}
+
+.tool {
+    float: left;
+    height: min-content;
+}
+
+.tool img {
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+    padding-top: unset;
+}
+
+section div.container {
+    height: auto;
+    margin-bottom: 5em;
+    display: grid;
+    column-gap: 2em;
+    row-gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+section .container img {
+    width: 100%;
+    height: auto;
+    border: #ddd solid 1px;
+    margin-top: 1em;
+}
+.making .vertical img {
+    margin-top: 1em;
+}
+.making .vertical img:last-of-type {
+    margin-bottom: 1em;
+}
+
+.making .item {
+    width: 55%;
+    height: fit-content;
+    border: solid 2px #daa520;
+}
+
+.topspace {
+    margin-top: 1em;
+}
+.bottomspace {
+    margin-bottom: 1em;
+}
+
+section .container img.SQ-logo {
+    width: 50%;
+    height: auto;
+}
