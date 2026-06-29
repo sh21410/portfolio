@@ -181,3 +181,36 @@ section .container img.SQ-logo {
     width: 50%;
     height: auto;
 }
+
+/* レスポンシブ */
+@media screen and (max-width: 959px) {
+	/* タブレット用 */
+}
+@media screen and (max-width: 480px) {
+    /* スマホ用 */
+    article {
+        padding: 3em 1.5em;
+        width: 100%;
+    }
+    .img_ex {
+        width: 100%;
+    }
+    .type.container,.making .container,.point .container {
+        display: block;
+    }
+    .tool {
+        margin: 0.8em 0 1em;
+        float: unset;
+    }
+    .tool img {
+        width: 2em;
+        height: auto;
+        margin-right: 3px;
+    }
+    dl {
+        width: 100%;
+    }
+    .point img {
+        margin-bottom: 1em;
+    }
+}

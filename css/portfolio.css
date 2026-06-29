@@ -202,7 +202,7 @@ a.gr2-c {
     align-items: center;
 }
 
-.modal-content img:nth-of-type(1) {
+.main-img {
     max-height: 40vw;
     max-width: 38vw;
     transform: none;
@@ -353,7 +353,7 @@ figure img:first-of-type {
     .category {
         padding: 2em 2em;
     }
-    .category .container {
+    .category .container,.modal-content .container {
         display: block;
     }
     .category ul {
@@ -391,5 +391,32 @@ figure img:first-of-type {
     .item-text {
         width: 150px;
         height: 150px;
+    }
+    .modal-content {
+        max-width: 85vw;
+        max-height: 78vh;
+        height: auto;
+        padding: 1em;
+    }
+    .modal-content h3 {
+        font-size: 1.2em;
+    }
+    .main-img,.modal-content video {
+        display: block;
+        margin: 0 auto;
+        max-height: 48vh;
+        max-width: 75vw;
+        margin-top: 2em;
+        transform: none;
+    }
+    .explain {
+        max-width: 80vw;
+        height: 8em;
+    }
+    .explain p {
+        font-size: smaller;
+    }
+    .votebox img:first-child, .votebox img {
+        max-width: 75vw;
     }
 }

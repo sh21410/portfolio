@@ -251,6 +251,9 @@ header .logo h1 {
 }
 
 
+section.profile {
+  margin-top: 3em;
+}
 .status {
   display: flex;
 }
@@ -265,6 +268,9 @@ header .logo h1 {
   content: '';
   height: 1em;
 }
+.status p:nth-of-type(2) {
+  padding-bottom: 1em;
+}
 
 .name {
   font-size: larger;
@@ -274,14 +280,28 @@ header .logo h1 {
   content: "";
   display: inline-block;
 }
-
-.status p:nth-of-type(2) {
-  padding-bottom: 1em;
+.career p::before {
+  display: block;
+  width: 2em;
+  height: 1em;
+  padding-top: 0.7em;
+  color: #e88f74;
+  content: "\025cf";
 }
-
-section.profile {
-  margin-top: 3em;
+.career p {
+  display: flex;
+  line-height: 1.5em;
 }
+.career p.lineb::after {
+  position: relative;
+  display: block;
+  left: -22.5em;
+  top: 2.3em;
+  width: 1px;
+  height: 2.5em;
+  background-color: #ccc;
+  content: '';
+  }
 
 .profile h2::before {
   color: #617676;
@@ -920,4 +940,9 @@ footer li {
   width: 80vw;
   overflow: hidden;
 }
+}
+@media screen and (max-width: 380px) {
+  .copy_detail {
+    font-size: 1em;
+  }
 }
