@@ -76,6 +76,11 @@ h1 {
   font-weight: lighter;
   font-size: medium;
   margin-left: 26vw;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: larger;
+  font-weight: bold;
 }
 
 small {
@@ -96,6 +101,9 @@ svg.wave {
 
 .header_nav img {
   width: 50px;
+}
+.hd-iconSP {
+  display: none;
 }
 
 /* .mainV {
@@ -321,8 +329,6 @@ svg.wave {
 .kodawari {
   top: -18vh;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 .kodawari video {
@@ -618,4 +624,118 @@ footer ul {
   width: 30vw;
   height: auto;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  /* スマホ用 */
+  /* h1 {
+    margin-bottom: 1em;
+  } */
+  header {
+    padding-top: 1em;
+  }
+  .header_nav {
+   justify-content: space-evenly;
+   margin: 0.5em auto 1em;
+  }
+  .header_nav li {
+    margin: 0 1em;
+  }
+  .hd-iconSP {
+    display: block;
+    text-align: center;
+  }
+  .hd-iconSP img {
+    width: 50px;
+  }
+  .hd-icon,.hd-link {
+    display: none;
+  }
+
+  .icatch {
+    padding: 8em 0 0 1em;
+  }
+  .mainV img {
+    width: 70vw;
+    margin-top: 16em;
+  }
+  .icatch p {
+    padding: 0.5em 1em;
+  }
+  .shop_name {
+    margin-bottom: 5em;
+  }
+
+  .concept {
+    padding: 0 1em;
+  }
+  .comment {
+    font-size: 0.8em;
+    margin: 0 1.5em;
+    padding: 2em 2.5em;
+  }
+  .how img {
+    width: 13em;
+    height: auto;
+    left: 50vw;
+    top: -4em;
+  }
+  .kodawari .comment {
+    top: -1em;
+  }
+  .kodawari video {
+    width: 90%;
+  }
+  .kodawari_video {
+    margin-top: 1em;
+  }
+  .slick01.slick-slider {
+    top: -1em;
+    left: 43vw;
+  }
+  .place::before {
+    left: -1em;
+  }
+  .place .comment {
+    left: -2em;
+  }
+  .drop {
+    height: 25em;
+  }
+  .menu h1  {
+    margin-left: 2em;
+  }
+  .pd-menu {
+    width: 90vw;
+    padding-left: 1em;
+  }
+  .pd-show {
+    width: 50%;
+  }
+  .here_shop, .head_shop {
+    width: 85vw;
+  }
+  .access img {
+    height: auto;
+  }
+  .detail {
+    padding-left: 0;
+  }
+  .slick02.slick-slider {
+    width: 40vw;
+  }
+  .slick02 img {
+    width: 40vw;
+  }
+  .link h1 {
+    margin: 0 auto 1em;
+    display: block;
+  }
+  .campaign {
+    margin-top: 1em;
+  }
+  footer ul {
+    text-align: center;
+    display: block;
+  }
 }
